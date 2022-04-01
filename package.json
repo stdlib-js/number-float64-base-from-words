@@ -1,0 +1,44 @@
+{
+  "name": "@stdlib/number-float64-base-from-words",
+  "version": "0.0.0",
+  "description": "Create a double-precision floating-point number from a higher order word and a lower order word.",
+  "license": "Apache-2.0",
+  "main": "./bundle.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/number-float64-base-from-words.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdtypes",
+    "base",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "types",
+    "type",
+    "float64",
+    "floating-point",
+    "float",
+    "double",
+    "dbl",
+    "from",
+    "words",
+    "create",
+    "high",
+    "low",
+    "int32",
+    "uint32",
+    "number",
+    "ieee754"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
