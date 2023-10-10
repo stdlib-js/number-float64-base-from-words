@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import fromWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-from-words@deno/mod.js';
+import fromWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-from-words@v0.1.1-deno/mod.js';
 ```
 
 #### fromWords( high, low )
@@ -96,7 +96,7 @@ v = fromWords( 4293918720, 0 );
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@deno/mod.js';
 import MAX_UINT32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-uint32-max@deno/mod.js';
-import fromWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-from-words@deno/mod.js';
+import fromWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-from-words@v0.1.1-deno/mod.js';
 
 var high;
 var low;
