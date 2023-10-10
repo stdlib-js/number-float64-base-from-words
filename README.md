@@ -35,14 +35,30 @@ limitations under the License.
 
 > Create a [double-precision floating-point number][ieee754] from a higher order word and a lower order word.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/number-float64-base-from-words
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import fromWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-from-words@deno/mod.js';
+var fromWords = require( '@stdlib/number-float64-base-from-words' );
 ```
 
 #### fromWords( high, low )
@@ -93,10 +109,10 @@ v = fromWords( 4293918720, 0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@deno/mod.js';
-import MAX_UINT32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-uint32-max@deno/mod.js';
-import fromWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-from-words@deno/mod.js';
+var randu = require( '@stdlib/random-base-randu' );
+var round = require( '@stdlib/math-base-special-round' );
+var MAX_UINT32 = require( '@stdlib/constants-uint32-max' );
+var fromWords = require( '@stdlib/number-float64-base-from-words' );
 
 var high;
 var low;
@@ -117,7 +133,97 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/number/float64/base/from_words.h"
+```
+
+#### stdlib_base_float64_from_words( high, low, \*x )
+
+Creates a double-precision floating-point number from a higher order word and a lower order word.
+
+```c
+#include <stdint.h>
+
+uint32_t high = 1074339512;
+uint32_t low = 1374389535;
+
+double x;
+stdlib_base_float64_from_words( high, low, &x );
+```
+
+The function accepts the following arguments:
+
+-   **high**: `[in] uint32_t` higher order word.
+-   **low**: `[in] uint32_t` lower order word.
+-   **x**: `[out] double*` destination for a double-precision floating-point number.
+
+```c
+void stdlib_base_float64_from_words( const uint32_t high, const uint32_t low, double *x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/number/float64/base/from_words.h"
+#include <stdint.h>
+#include <stdio.h>
+
+int main( void ) {
+    uint32_t high = 1074339512;
+    uint32_t low[] = { 0, 10000, 1000000, 1374389535 };
+
+    double x;
+    int i;
+    for ( i = 0; i < 4; i++ ) {
+        stdlib_base_float64_from_words( high, low[ i ], &x );
+        printf( "high: %u, low: %u => %lf\n", high, low[ i ], x );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -136,7 +242,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -166,8 +272,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/number-float64-base-from-words.svg
 [npm-url]: https://npmjs.org/package/@stdlib/number-float64-base-from-words
 
-[test-image]: https://github.com/stdlib-js/number-float64-base-from-words/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/number-float64-base-from-words/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/number-float64-base-from-words/actions/workflows/test.yml/badge.svg?branch=v0.1.1
+[test-url]: https://github.com/stdlib-js/number-float64-base-from-words/actions/workflows/test.yml?query=branch:v0.1.1
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/number-float64-base-from-words/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/number-float64-base-from-words?branch=main
@@ -198,7 +304,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [ieee754]: https://en.wikipedia.org/wiki/IEEE_754-1985
 
-[@stdlib/number/float64/base/to-words]: https://github.com/stdlib-js/number-float64-base-to-words/tree/deno
+[@stdlib/number/float64/base/to-words]: https://github.com/stdlib-js/number-float64-base-to-words
 
 </section>
 
