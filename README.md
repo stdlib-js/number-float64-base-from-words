@@ -44,7 +44,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-fromWords = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-from-words@umd/browser.js' )
+fromWords = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-from-words@v0.2.1-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -56,7 +56,7 @@ var fromWords = require( 'path/to/vendor/umd/number-float64-base-from-words/inde
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-from-words@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-from-words@v0.2.1-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -123,7 +123,7 @@ v = fromWords( 4293918720, 0 );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/constants-uint32-max@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-from-words@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-from-words@v0.2.1-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
