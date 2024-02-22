@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import fromWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-from-words@esm/index.mjs';
+import fromWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-from-words@v0.2.1-esm/index.mjs';
 ```
 
 #### fromWords( high, low )
@@ -101,7 +101,7 @@ v = fromWords( 4293918720, 0 );
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@esm/index.mjs';
 import MAX_UINT32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-uint32-max@esm/index.mjs';
-import fromWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-from-words@esm/index.mjs';
+import fromWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-from-words@v0.2.1-esm/index.mjs';
 
 var high;
 var low;
