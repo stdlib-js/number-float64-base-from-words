@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import fromWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-from-words@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/number-float64-base-from-words/tags). For example,
+
+```javascript
 import fromWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-from-words@v0.2.2-deno/mod.js';
 ```
 
@@ -96,7 +101,7 @@ v = fromWords( 4293918720, 0 );
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@deno/mod.js';
 import MAX_UINT32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-uint32-max@deno/mod.js';
-import fromWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-from-words@v0.2.2-deno/mod.js';
+import fromWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-from-words@deno/mod.js';
 
 var high;
 var low;
