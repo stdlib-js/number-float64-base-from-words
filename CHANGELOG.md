@@ -4,7 +4,19 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-02-03)
+## Unreleased (2025-06-13)
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#7337](https://github.com/stdlib-js/stdlib/issues/7337)
+
+</section>
+
+<!-- /.issues -->
 
 <section class="commits">
 
@@ -12,6 +24,7 @@
 
 <details>
 
+-   [`930d012`](https://github.com/stdlib-js/stdlib/commit/930d012685e0d75e6c0de8d80de7a39d67565e79) - **chore:** fix C lint errors [(#7338)](https://github.com/stdlib-js/stdlib/pull/7338) _(by zhanggy)_
 -   [`2777e4b`](https://github.com/stdlib-js/stdlib/commit/2777e4be161869d09406e3b17947d24c64b47af2) - **bench:** resolve lint errors in benchmarks _(by Athan Reines)_
 
 </details>
@@ -24,9 +37,10 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   zhanggy
 
 </section>
 
