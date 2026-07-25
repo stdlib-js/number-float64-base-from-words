@@ -1,4 +1,4 @@
-"use strict";var t=function(e,r){return function(){return r||e((r={exports:{}}).exports,r),r.exports}};var v=t(function(p,u){"use strict";var c=require("@stdlib/assert-is-little-endian"),s,i,a;c===!0?(i=1,a=0):(i=0,a=1);s={HIGH:i,LOW:a};u.exports=s});var W=t(function(x,I){"use strict";var L=require("@stdlib/array-uint32"),f=require("@stdlib/array-float64"),H=v(),o=new f(1),n=new L(o.buffer),q=H.HIGH,O=H.LOW;function d(e,r){return n[q]=e,n[O]=r,o[0]}I.exports=d});var G=W();module.exports=G;
+"use strict";var t=function(e,r){return function(){try{return r||e((r={exports:{}}).exports,r),r.exports}catch(c){throw r=0,c}}};var v=t(function(x,u){"use strict";var L=require("@stdlib/assert-is-little-endian"),s,i,a;L===!0?(i=1,a=0):(i=0,a=1);s={HIGH:i,LOW:a};u.exports=s});var W=t(function(A,I){"use strict";var f=require("@stdlib/array-uint32"),q=require("@stdlib/array-float64"),H=v(),o=new q(1),n=new f(o.buffer),O=H.HIGH,d=H.LOW;function G(e,r){return n[O]=e,n[d]=r,o[0]}I.exports=G});var l=W();module.exports=l;
 /**
 * @license Apache-2.0
 *
